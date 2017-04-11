@@ -1,0 +1,25 @@
+{
+  "name": "championship-inscriptions",
+  "version": "1.0.0",
+  "description": "simply form to inscription teams",
+  "main": "index.php",
+  "dependencies": {
+    "foundation-sites": "^6.3.1"
+  },
+  "devDependencies": {
+    "foundation-sites": "^6.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giojavi04/championship-inscriptions.git"
+  },
+  "author": "Javier Montalvo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giojavi04/championship-inscriptions/issues"
+  },
+  "homepage": "https://github.com/giojavi04/championship-inscriptions#readme"
+}
