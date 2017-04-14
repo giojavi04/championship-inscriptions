@@ -29,8 +29,13 @@ class LeadController extends BaseController
      * @var array
      */
     protected $labels = [
-        'name'  => 'Name',
+        'name'  => 'Nombre',
+        'last_name' => 'Apellido',
+        'name_team' => 'Nombre del equipo',
         'email' => 'Email',
+        'phone' => 'Teléfono',
+        'img_inscription' => 'Imágen del depósito',
+        'message' => 'Comentario'
     ];
 
 
@@ -50,15 +55,17 @@ class LeadController extends BaseController
         $lead->name_team = $request->name_team;
         $lead->email     = $request->email;
         $lead->phone     = $request->phone;
-        $lead->img_inscription = $request->img_inscription;
-        $lead->date      = date('Y-m-d H:i:s');
+        // $lead->img_inscription = $request->img_inscription;
+        $lead->message   = $request->message;
+        $lead->created_at      = date('Y-m-d H:i:s');
 
         if (!$lead->isRegistered($request->email)) {
             $lead->save();
+            
+            Email::send($lead->email, getenv('LEAD_EMAIL_SUBJECT'), 'lead', $lead);
+            Email::send(getenv('ADMIN_EMAIL'), getenv('ADMIN_EMAIL_SUBJECT'), 'admin', $lead);
         }
 
-        Email::send($lead->email, getenv('LEAD_EMAIL_SUBJECT'), 'lead', $lead);
-        Email::send(getenv('ADMIN_EMAIL'), getenv('ADMIN_EMAIL_SUBJECT'), 'admin', $lead);
 
         redirect('thanks');
     }

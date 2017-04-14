@@ -6,7 +6,11 @@
 {% block content %}
 
     <header class="row header">
-        <img src="images/banner-1.png" alt="Banner">
+        <img src="images/banner-1.png" alt="Fútbol">
+        <!--<div class="owl-carousel owl-theme">
+            <img src="images/banner-2.png" alt="Ecuavoley">
+            <img src="images/banner-3.png" alt="Basket">
+        </div>-->
     </header>
     <section class="section">
         <div class="row">
@@ -55,11 +59,17 @@
                     </label>
                 </div>
                 <div class="small-12 medium-6 columns">
-                    <label>Sube la imágen del depósito para validar la inscripción</label>
+                    <!--<label>Sube la imágen del depósito o transaferencia de la inscripción</label>
                     <label for="imgInscription" class="button hollow secondary">Subir imágen</label>
-                    <input type="file" id="imgInscription" name="img_inscription" class="show-for-sr">
+                    <input type="file" id="imgInscription" name="img_inscription" class="show-for-sr">-->
                 </div>
-                <div class="small-12 align-center columns">
+                <div class="small-12 medium-8 medium-offset-2 columns">
+                    <label>
+                        Comentario:
+                        <textarea name="message" rows="5"></textarea>
+                    </label>
+                </div>
+                <div class="small-12 text-center columns">
                     <button class="button hollow" type="submit">Enviar Inscripción</button>
                 </div>
             </div>

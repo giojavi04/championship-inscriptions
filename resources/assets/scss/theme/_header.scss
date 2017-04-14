@@ -6,4 +6,7 @@
 
 .header{
   border-top: 5px solid $base-color;
+  &__logo {
+    padding-top: 1rem;
+  }
 }//FIN HEADER

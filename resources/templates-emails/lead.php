@@ -8,15 +8,19 @@
     <table>
         <thead>
             <tr>
-                   <h2>Gracias <span><?= $lead->full_name ?></span> <br>por contactarnos</h2>
+                   <h3>Gracias <span><?= $lead->name ?></span> <br>por contactarnos</h3>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>
+                    <p>En breve nos contactaremos contigo para validar tu inscipción.</p>
                     <p>
-                        Pronto recibirás noticias y novedades de tu interés.
+                        Por este medio recibirás noticias y novedades sobre el campeonato, reuniones, reglamentos, etc.
                     </p>
+                    <p>Contacto, puedes responder a este correo o:</p>
+                    <p>Mario Romero: 0994898459</p>
+                    <p>Stefy Pacheco: 0999824349</p>
                 </td>
             </tr>
         </tbody>

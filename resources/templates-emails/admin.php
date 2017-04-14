@@ -8,7 +8,7 @@
     <table>
         <thead>
             <tr>
-                 <h2>Nuevo Cliente:</h2>
+                 <h2>Nueva Inscripción:</h2>
             </tr>
         </thead>
         <tbody>
@@ -16,7 +16,12 @@
                 <td>
                     <ul>
                         <li><span>Nombre:</span> <?= $lead->name ?></li>
-                        <li><span>Apellido:</span> <?= $lead->email ?></li>
+                        <li><span>Apellido:</span> <?= $lead->last_name ?></li>
+                        <li><span>Nombre del equipo:</span> <?= $lead->name_team ?></li>
+                        <li><span>Email:</span> <?= $lead->email ?></li>
+                        <li><span>Teléfono:</span> <?= $lead->phone ?></li>
+                        <li><span>Comentario:</span> <?= $lead->message ?></li>
+                        <li><span>Fecha de inscripción:</span> <?= $lead->created_at ?></li>
                     </ul>
                 </td>
             </tr>
