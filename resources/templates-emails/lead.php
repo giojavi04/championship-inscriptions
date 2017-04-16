@@ -15,6 +15,7 @@
             <tr>
                 <td>
                     <p>En breve nos contactaremos contigo para validar tu inscipción.</p>
+                    <p>Si tienes la captura del depósito adjunta a este email, y tu inscripción quedará verificada.</p>
                     <p>
                         Por este medio recibirás noticias y novedades sobre el campeonato, reuniones, reglamentos, etc.
                     </p>

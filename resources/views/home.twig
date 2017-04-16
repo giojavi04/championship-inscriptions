@@ -18,6 +18,11 @@
                 {{ include('partials/alerts.twig')}}
             </div>
         </div>
+        <div class="row">
+            <div class="small-12 columns text-center">
+                <a data-open="information" class="button hollow">Información General</a>
+            </div>
+        </div>
         <form action="store" method="POST" id="lead" data-abide novalidate>
             <div class="row">
                 <div class="small-12 column text-center">
@@ -59,6 +64,25 @@
                     </label>
                 </div>
                 <div class="small-12 medium-6 columns">
+                    <label>Disciplina a participar
+                    <select name="discipline_to_participate">
+                        <option value="">Selecciona</option>
+                        <option value="futbol">Fútbol</option>
+                        <option value="ecuavoley">Ecuavoley</option>
+                        <option value="basket">Basket</option>
+                    </select>
+                    </label>
+                </div>
+                    <div class="small-12 medium-6 columns">
+                        <label>Tipo de equipo
+                        <select name="type_team">
+                            <option value="">Selecciona</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="small-12 medium-6 columns">
                     <!--<label>Sube la imágen del depósito o transaferencia de la inscripción</label>
                     <label for="imgInscription" class="button hollow secondary">Subir imágen</label>
                     <input type="file" id="imgInscription" name="img_inscription" class="show-for-sr">-->
@@ -75,5 +99,49 @@
             </div>
         </form>
     </section>
+
+    <div class="reveal" id="information" data-reveal>
+        <h1>Información general</h1>
+        <p class="lead">Inscripción de Equipos</p>
+        <p>
+            Del 30 de Marzo a partir de <br>
+            (19h00 a 21:30)<br>
+            Hasta: 20 de Abril del 2017
+        </p>
+        <p>
+            Del 30 de Marzo a partir de <br>
+            (19h00 a 21:30) <br>
+            Hasta: 20 de Abril del 2017
+        </p>
+        <p class="lead">
+            Fecha de Sesiones
+        </p>
+        <p>
+            20 de Abril del 2017
+        </p>
+        <p>
+            Congresillo técnico y <br>
+            aprobación de reglamento <br>
+            27 de Abril del 2017
+        </p>
+        <p class="lead">
+            Inauguración de Campeonato
+        </p>
+        <p>
+            06 de Mayo del 2017
+        </p>
+        <p class="lead">
+            Inicio de Campeonato
+        </p>
+        <p>
+            13 de Mayo del 2017
+        </p>
+        <p class="lead">
+            Si tienes papeleta de depósito o la imágen puedes adjuntarla al email que te llega depúes de enviado este formulario, tu inscripción quedará verificada.
+        </p>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
 {% endblock %}

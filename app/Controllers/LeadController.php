@@ -34,6 +34,8 @@ class LeadController extends BaseController
         'name_team' => 'Nombre del equipo',
         'email' => 'Email',
         'phone' => 'Teléfono',
+        'discipline_to_participate' => 'Disciplina a participar',
+        'type_team' => 'Tipo de equipo',
         'img_inscription' => 'Imágen del depósito',
         'message' => 'Comentario'
     ];
@@ -55,6 +57,8 @@ class LeadController extends BaseController
         $lead->name_team = $request->name_team;
         $lead->email     = $request->email;
         $lead->phone     = $request->phone;
+        $lead->discipline_to_participate     = $request->discipline_to_participate;
+        $lead->type_team     = $request->type_team;
         // $lead->img_inscription = $request->img_inscription;
         $lead->message   = $request->message;
         $lead->created_at      = date('Y-m-d H:i:s');
